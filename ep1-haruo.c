@@ -4,7 +4,7 @@
 
 int main(){
 
-    int parar = 0, depur = 0, jogados = 0, opcao, tentativas;
+    int parar = 0, depur = 0, jogados = 0, vencidos = 0, opcao, tentativas;
     int digito;
     int n1, n2, n3;
     int dig1, dig2, dig3;
@@ -121,6 +121,7 @@ int main(){
             }
             else{
                 printf("Você VENCEU!\n\n");
+                vencidos++;
             }
 
             jogados++;
@@ -128,6 +129,8 @@ int main(){
         }
     }
     
+    printf("Você jogou %d jogo(s) e venceu %d vez(es)!\n\n", jogados, vencidos);
+
     return 0;
 
 }
